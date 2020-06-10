@@ -1,4 +1,4 @@
-// Sample test to show how to mock an HTTP GET call internally.
+// Sample concurrent to show how to mock an HTTP GET call internally.
 // Differs slightly from the book to show more.
 package listing12
 
@@ -48,7 +48,7 @@ func TestDownload(t *testing.T) {
 	server := mockServer()
 	defer server.Close()
 
-	t.Log("Given the need to test downloading content.")
+	t.Log("Given the need to concurrent downloading content.")
 	{
 		t.Logf("\tWhen checking \"%s\" for status code \"%d\"",
 			server.URL, statusCode)

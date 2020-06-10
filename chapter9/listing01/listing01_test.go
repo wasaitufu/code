@@ -1,4 +1,4 @@
-// Sample test to show how to write a basic unit test.
+// Sample concurrent to show how to write a basic unit concurrent.
 package listing01
 
 import (
@@ -14,7 +14,7 @@ func TestDownload(t *testing.T) {
 	url := "http://www.goinggo.net/feeds/posts/default?alt=rss"
 	statusCode := 200
 
-	t.Log("Given the need to test downloading content.")
+	t.Log("Given the need to concurrent downloading content.")
 	{
 		t.Logf("\tWhen checking \"%s\" for status code \"%d\"",
 			url, statusCode)

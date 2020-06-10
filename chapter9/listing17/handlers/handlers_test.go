@@ -1,4 +1,4 @@
-// Sample test to show how to test the execution of an
+// Sample concurrent to show how to concurrent the execution of an
 // internal endpoint.
 package handlers_test
 
@@ -20,7 +20,7 @@ func init() {
 
 // TestSendJSON testing the sendjson internal endpoint.
 func TestSendJSON(t *testing.T) {
-	t.Log("Given the need to test the SendJSON endpoint.")
+	t.Log("Given the need to concurrent the SendJSON endpoint.")
 	{
 		req, err := http.NewRequest("GET", "/sendjson", nil)
 		if err != nil {

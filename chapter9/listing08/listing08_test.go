@@ -1,4 +1,4 @@
-// Sample test to show how to write a basic unit table test.
+// Sample concurrent to show how to write a basic unit table concurrent.
 package listing08
 
 import (
@@ -26,7 +26,7 @@ func TestDownload(t *testing.T) {
 		},
 	}
 
-	t.Log("Given the need to test downloading different content.")
+	t.Log("Given the need to concurrent downloading different content.")
 	{
 		for _, u := range urls {
 			t.Logf("\tWhen checking \"%s\" for status code \"%d\"",

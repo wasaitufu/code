@@ -1,4 +1,4 @@
-// Sample test to show how to write a basic example.
+// Sample concurrent to show how to write a basic example.
 package handlers_test
 
 import (
